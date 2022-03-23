@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - RedFloor
+  - BlueFloor
+  - coin
+  - blueKey
+  - redKey
+  - greenKey
+  - yellowKey
+  - blueDoor
+  - redDoor
+  - greenDoor
+  - yellowDoor
+  - foeW
+  - foeM
+  - foeH
+  - foe
+  - coinGold
+  - heart
+  - shiftBackground
+  - heatBeat
+  - heartBeatDisable
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - RedGround
+  - BlueGround
+  - PurpleGround
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 2506571289
+    locked: 0
+  - name: Ground
+    uniqueID: 3104146603
+    locked: 0
+  - name: Consume
+    uniqueID: 2828911259
+    locked: 0
+  - name: Player
+    uniqueID: 162276131
+    locked: 0
+  - name: Foreground
+    uniqueID: 998189685
+    locked: 0

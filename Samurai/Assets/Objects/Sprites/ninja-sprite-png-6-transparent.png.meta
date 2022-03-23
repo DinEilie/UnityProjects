@@ -1,0 +1,710 @@
+fileFormatVersion: 2
+guid: d62d14f1da4ecc44c998f3e445978452
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7073215197439609910
+    second: ninja-sprite-png-6-transparent_0
+  - first:
+      213: 1664854556688748102
+    second: ninja-sprite-png-6-transparent_1
+  - first:
+      213: -8888800213581050828
+    second: ninja-sprite-png-6-transparent_2
+  - first:
+      213: 8648746972105319047
+    second: ninja-sprite-png-6-transparent_3
+  - first:
+      213: 3252520606751779485
+    second: ninja-sprite-png-6-transparent_4
+  - first:
+      213: 9142350174767035959
+    second: ninja-sprite-png-6-transparent_5
+  - first:
+      213: -6937191697535753499
+    second: ninja-sprite-png-6-transparent_6
+  - first:
+      213: 4072636365493130658
+    second: ninja-sprite-png-6-transparent_7
+  - first:
+      213: 2091011170857369553
+    second: ninja-sprite-png-6-transparent_8
+  - first:
+      213: -4507957966705843033
+    second: ninja-sprite-png-6-transparent_9
+  - first:
+      213: -3322338247136934830
+    second: ninja-sprite-png-6-transparent_10
+  - first:
+      213: -4787358950733537183
+    second: ninja-sprite-png-6-transparent_11
+  - first:
+      213: -687448138296314590
+    second: ninja-sprite-png-6-transparent_12
+  - first:
+      213: -3141231929712658390
+    second: ninja-sprite-png-6-transparent_13
+  - first:
+      213: -1685354020129886745
+    second: ninja-sprite-png-6-transparent_14
+  - first:
+      213: 1721394584250995654
+    second: ninja-sprite-png-6-transparent_15
+  - first:
+      213: 5283608924453849254
+    second: ninja-sprite-png-6-transparent_16
+  - first:
+      213: -7535228532781497040
+    second: ninja-sprite-png-6-transparent_17
+  - first:
+      213: 5648304853717339549
+    second: ninja-sprite-png-6-transparent_18
+  - first:
+      213: 235454571243732037
+    second: ninja-sprite-png-6-transparent_19
+  - first:
+      213: -8898024876237639949
+    second: ninja-sprite-png-6-transparent_20
+  - first:
+      213: -9072579327713462473
+    second: ninja-sprite-png-6-transparent_21
+  - first:
+      213: -5397125734950835716
+    second: ninja-sprite-png-6-transparent_22
+  - first:
+      213: -3686293412136746935
+    second: ninja-sprite-png-6-transparent_23
+  - first:
+      213: 2804460305419866854
+    second: ninja-sprite-png-6-transparent_24
+  - first:
+      213: -1347919349921543132
+    second: ninja-sprite-png-6-transparent_25
+  - first:
+      213: 1534138090361789825
+    second: ninja-sprite-png-6-transparent_26
+  - first:
+      213: -6204193630501779265
+    second: ninja-sprite-png-6-transparent_27
+  - first:
+      213: 7816813009427637994
+    second: ninja-sprite-png-6-transparent_28
+  - first:
+      213: 1954337492656435773
+    second: ninja-sprite-png-6-transparent_29
+  - first:
+      213: -978183407198570341
+    second: ninja-sprite-png-6-transparent_30
+  - first:
+      213: 3937274412236333093
+    second: ninja-sprite-png-6-transparent_31
+  - first:
+      213: 6608619293003975978
+    second: ninja-sprite-png-6-transparent_32
+  - first:
+      213: -7091941146296663399
+    second: ninja-sprite-png-6-transparent_33
+  - first:
+      213: -3187577150582196029
+    second: ninja-sprite-png-6-transparent_34
+  - first:
+      213: 1423108136442652103
+    second: ninja-sprite-png-6-transparent_35
+  - first:
+      213: 1651748832657139306
+    second: ninja-sprite-png-6-transparent_36
+  - first:
+      213: -6104380675480281792
+    second: ninja-sprite-png-6-transparent_37
+  - first:
+      213: 1474112249760256344
+    second: ninja-sprite-png-6-transparent_38
+  - first:
+      213: -5773370912263831550
+    second: ninja-sprite-png-6-transparent_39
+  - first:
+      213: 5367723502879215826
+    second: ninja-sprite-png-6-transparent_40
+  - first:
+      213: -7848917632783873114
+    second: ninja-sprite-png-6-transparent_41
+  - first:
+      213: 1464368813542974032
+    second: ninja-sprite-png-6-transparent_42
+  - first:
+      213: 3224864199485923601
+    second: ninja-sprite-png-6-transparent_43
+  - first:
+      213: 5467893436942434013
+    second: ninja-sprite-png-6-transparent_44
+  - first:
+      213: -4585157528490482088
+    second: ninja-sprite-png-6-transparent_45
+  - first:
+      213: -9134330754617283872
+    second: ninja-sprite-png-6-transparent_46
+  - first:
+      213: 8948665722715857112
+    second: ninja-sprite-png-6-transparent_47
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ninja-sprite-png-6-transparent_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 416
+        width: 66
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63c484f1fbb192260800000000000000
+      internalID: 7073215197439609910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja-sprite-png-6-transparent_1
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 416
+        width: 65
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64e8f160660ca1710800000000000000
+      internalID: 1664854556688748102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja-sprite-png-6-transparent_2
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 416
+        width: 66
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43cc516fc43a4a480800000000000000
+      internalID: -8888800213581050828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja-sprite-png-6-transparent_3
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 414
+        width: 75
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 782a2905c85860870800000000000000
+      internalID: 8648746972105319047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja-sprite-png-6-transparent_4
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 414
+        width: 75
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9ae31e5246432d20800000000000000
+      internalID: 3252520606751779485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja-sprite-png-6-transparent_5
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 414
+        width: 75
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7363833bb0720ee70800000000000000
+      internalID: 9142350174767035959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja-sprite-png-6-transparent_6
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 414
+        width: 69
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e2a799e7e42abf90800000000000000
+      internalID: -6937191697535753499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja-sprite-png-6-transparent_7
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 316
+        width: 75
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a55e885239e48830800000000000000
+      internalID: 4072636365493130658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja-sprite-png-6-transparent_8
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 317
+        width: 90
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dfb35cc493c40d10800000000000000
+      internalID: 2091011170857369553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja-sprite-png-6-transparent_9
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 316
+        width: 75
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a42b1c0d148071c0800000000000000
+      internalID: -4507957966705843033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja-sprite-png-6-transparent_10
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 316
+        width: 75
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25485bb77fea4e1d0800000000000000
+      internalID: -3322338247136934830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja-sprite-png-6-transparent_11
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 316
+        width: 85
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 160ad391662ef8db0800000000000000
+      internalID: -4787358950733537183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja-sprite-png-6-transparent_12
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 316
+        width: 80
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 225385b7f81b576f0800000000000000
+      internalID: -687448138296314590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja-sprite-png-6-transparent_13
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 218
+        width: 65
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a28bc50f33a1864d0800000000000000
+      internalID: -3141231929712658390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja-sprite-png-6-transparent_14
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 218
+        width: 79
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eda165b27b6c98e0800000000000000
+      internalID: -1685354020129886745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja-sprite-png-6-transparent_15
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 219
+        width: 80
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c3df88014f93e710800000000000000
+      internalID: 1721394584250995654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja-sprite-png-6-transparent_16
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 219
+        width: 90
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a8c722b256235940800000000000000
+      internalID: 5283608924453849254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja-sprite-png-6-transparent_17
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 217
+        width: 70
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 035cb22a29d7d6790800000000000000
+      internalID: -7535228532781497040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja-sprite-png-6-transparent_18
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 216
+        width: 85
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9dcfe4a65fc26e40800000000000000
+      internalID: 5648304853717339549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja-sprite-png-6-transparent_19
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 117
+        width: 75
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54c79bf5fa0844300800000000000000
+      internalID: 235454571243732037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja-sprite-png-6-transparent_20
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 117
+        width: 67
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fe2441d48dd38480800000000000000
+      internalID: -8898024876237639949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ninja-sprite-png-6-transparent_21
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 115
+        width: 72
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73736178b29b71280800000000000000
+      internalID: -9072579327713462473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
