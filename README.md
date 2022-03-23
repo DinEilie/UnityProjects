@@ -1,2 +1,2 @@
 # UnityProjects
-Game projects that I currently building with Unity engine.
+Game projects that I'm currently building with Unity engine.
