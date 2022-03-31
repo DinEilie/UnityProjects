@@ -19,9 +19,6 @@ public class Movement : MonoBehaviour
     [SerializeField] [Range(1,25)] [Tooltip("Player movement speed.")] private float speed = 4.5f;
     [SerializeField] [Range(1,10)] [Tooltip("Player movement speed is multiply by this value while sprinting.")] private float sprintSpeed = 2f;
     [SerializeField] [Range(1,30)] private float jumpHeight = 2.5f;
-    private const float gravity = -9.8f;
-    private float tempGravity = gravity;
-    private float velocity;
     [SerializeField] private CharacterController playerController;
     [SerializeField] private GameObject cameraObj;
     [SerializeField] private Transform eyeMarker;
@@ -40,19 +37,11 @@ public class Movement : MonoBehaviour
     [SerializeField] private bool climbing;
     [SerializeField] private float steps;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
         //Update if the object is grounded
         grounded = Physics.CheckSphere(floorMarker.position, floorMarkerRadius, floorMask);
-        if(allowClimb)
-            Climb();
         if (allowMovement)
             Move();
         if (allowCrouch)
@@ -63,18 +52,6 @@ public class Movement : MonoBehaviour
             Jump();
         if (allowFloatability)
             Floatate();
-        if (allowGravity)
-            Gravitate();
-    }
-
-    private void Climb(){
-        if(climbing){
-            allowGravity = false;
-            allowSprint = false;
-            allowCrouch = false;
-            allowJump = false;
-            allowFloatability = false;
-        }
     }
 
     private void Move(){
@@ -126,26 +103,19 @@ public class Movement : MonoBehaviour
 
     private void Jump(){
         if(Input.GetButtonDown("Jump")){
+            float temp = gameObject.GetComponent<Gravity>().Get();
             if (grounded && sprinting)
-                velocity = Mathf.Sqrt((jumpHeight * sprintSpeed) * tempGravity * -2f);
+                gameObject.GetComponent<Gravity>().AddVelocity(jumpHeight, sprintSpeed);
             else if (grounded)
-                velocity = Mathf.Sqrt(jumpHeight * tempGravity * -2f);
+                gameObject.GetComponent<Gravity>().AddVelocity(jumpHeight, 1f);
         }
     }
 
     private void Floatate(){
         if (Input.GetKey(KeyCode.F) && !grounded)
-            tempGravity = -3f;
+            gameObject.GetComponent<Gravity>().Set(-3f);
         else   
-            tempGravity = gravity;
-    }
-
-    private void Gravitate(){
-        velocity += tempGravity * Time.deltaTime * 1.2f;
-        if (grounded && velocity < 0)
-            velocity = -2f;
-        Vector3 motion = transform.up * velocity;
-        playerController.Move(motion * Time.deltaTime);
+            gameObject.GetComponent<Gravity>().Reset();
     }
 
     private void Sprint(){
@@ -192,17 +162,22 @@ public class Movement : MonoBehaviour
     }
 
     public void TriggerClimbing(){
-        if(!climbing){
+        if(!climbing && allowClimb){
             Debug.Log("Now entering climbing mode");
+            gameObject.GetComponent<Gravity>().enable = false;
+            allowSprint = false;
+            allowCrouch = false;
+            allowJump = false;
+            allowFloatability = false;
             climbing = true;
         } else{
             Debug.Log("Now leaving climbing mode");
-            climbing = false; 
-            allowGravity = true;
+            gameObject.GetComponent<Gravity>().enable = true;
             allowSprint = true;
             allowCrouch = true;
             allowJump = true;
             allowFloatability = true;
+            climbing = false;
         }
     }
 }

@@ -165,6 +165,7 @@ GameObject:
   - component: {fileID: 574463902}
   - component: {fileID: 574463906}
   - component: {fileID: 574463907}
+  - component: {fileID: 574463909}
   - component: {fileID: 574463908}
   m_Layer: 0
   m_Name: Player
@@ -242,7 +243,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 574463901}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 500.06, y: 2.19, z: 490.1}
+  m_LocalPosition: {x: 500.06, y: 5.128, z: 490.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1327355409}
@@ -321,6 +322,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allowStorage: 1
   allowEquipment: 1
+--- !u!114 &574463909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 574463901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff094e2916f071d49964f62bcfe137aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enable: 1
+  gravity: 9.8
+  velocity: 0
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
