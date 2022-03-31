@@ -5,7 +5,7 @@ using UnityEngine;
 public class Gravity : MonoBehaviour
 {
     public bool enable;
-    [SerializeField] private const float defaultValue = 9.8f;
+    private const float defaultValue = 9.8f;
     [SerializeField] private float gravity = defaultValue;
     [SerializeField] private float velocity;
 
