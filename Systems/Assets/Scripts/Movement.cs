@@ -10,7 +10,6 @@ public class Movement : MonoBehaviour
     public bool allowSprint = true;
     public bool allowJump = true;
     public bool allowFloatability = true;
-    public bool allowGravity = true;
     public bool allowCrouch = true;
     public bool allowClimb = true;
 
@@ -18,14 +17,14 @@ public class Movement : MonoBehaviour
     [Header ("Movement values")]
     [SerializeField] [Range(1,25)] [Tooltip("Player movement speed.")] private float speed = 4.5f;
     [SerializeField] [Range(1,10)] [Tooltip("Player movement speed is multiply by this value while sprinting.")] private float sprintSpeed = 2f;
-    [SerializeField] [Range(1,30)] private float jumpHeight = 2.5f;
-    [SerializeField] private CharacterController playerController;
-    [SerializeField] private GameObject cameraObj;
-    [SerializeField] private Transform eyeMarker;
-    [SerializeField] private Transform crouchMarker;
-    [SerializeField] private Transform floorMarker;
-    [SerializeField] private float floorMarkerRadius = 0.2f;
-    [SerializeField] private LayerMask floorMask;
+    [SerializeField] [Range(1,30)] [Tooltip("Player jump height.")] private float jumpHeight = 2.5f;
+    [SerializeField] [Tooltip("Refrence to the ''CharacterController''.")] private CharacterController playerController;
+    [SerializeField] [Tooltip("Refrence to the ''Camera'' object.")] private GameObject cameraObj;
+    [SerializeField] [Tooltip("Refrence to the ''Camera'' default position.")] private Transform eyeMarker;
+    [SerializeField] [Tooltip("Refrence to the ''Camera'' low position.")] private Transform crouchMarker;
+    [SerializeField] [Tooltip("Refrence to the ''Player'' ground checker position.")] private Transform floorMarker;
+    [SerializeField] [Tooltip("Ground checker radius.")] private float floorMarkerRadius = 0.2f;
+    [SerializeField] [Tooltip("Refrence to the ''Layer'' ground.")] private LayerMask floorMask;
     private float countStep = 0f;
     
     // Movement status
