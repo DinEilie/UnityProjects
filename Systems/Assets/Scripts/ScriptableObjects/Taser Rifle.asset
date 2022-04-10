@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61585f145c29cb040a35e91d2fe14d30, type: 3}
+  m_Name: Taser Rifle
+  m_EditorClassIdentifier: 
+  id: 1
+  title: Taser Rifle
+  type: 0
+  wType: 0
+  info: This rifle serve as a self-defense weapon, However it can be deadly if aimed
+    towards enemy's weakness points.
+  weight: 4.2
+  sellable: 1
+  price: 10
+  damage: 5
+  batteryDrain: 3

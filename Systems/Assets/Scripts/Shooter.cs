@@ -8,12 +8,14 @@ public class Shooter : MonoBehaviour
     [SerializeField] private Transform shootingPosition;
     [SerializeField] private GameObject hitObject;
     [SerializeField] private const float recoilSpeed = 0.1f; 
+    [SerializeField] private GameObject cursorShoot;
     private float recoilTimer = recoilSpeed;
 
     // Start is called before the first frame update
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
+        cursorShoot.SetActive(false);
     }
 
     // Update is called once per frame
@@ -24,17 +26,22 @@ public class Shooter : MonoBehaviour
             recoilTimer -= Time.deltaTime;
         else
             recoilTimer = 0f;
-        
-        // Shoot a bullet
-        if(Input.GetButton("Fire1") && recoilTimer == 0f){
-            RaycastHit hit;
-            if(Physics.Raycast(shootingPosition.position, shootingPosition.TransformDirection(Vector3.forward), out hit, 1000f)){
-                Debug.DrawRay(shootingPosition.position, shootingPosition.TransformDirection(Vector3.forward) * hit.distance, Color.red, 1, false);
-                GameObject bullet = GameObject.Instantiate(hitObject, hit.point, shootingPosition.rotation);
-                Debug.Log("Hit!");
-                recoilTimer = recoilSpeed;
-                GameObject.Destroy(bullet, 0.5f);
+        if (Input.GetButton("Fire2")){
+            cursorShoot.SetActive(true);
+
+            // Shoot a bullet
+            if(Input.GetButton("Fire1") && recoilTimer == 0f){
+                RaycastHit hit;
+                if(Physics.Raycast(shootingPosition.position, shootingPosition.TransformDirection(Vector3.forward), out hit, 1000f)){
+                    Debug.DrawRay(shootingPosition.position, shootingPosition.TransformDirection(Vector3.forward) * hit.distance, Color.red, 1, false);
+                    GameObject bullet = GameObject.Instantiate(hitObject, hit.point, shootingPosition.rotation);
+                    Debug.Log("Hit!");
+                    recoilTimer = recoilSpeed;
+                    GameObject.Destroy(bullet, 0.5f);
+                }
             }
+        } else {
+            cursorShoot.SetActive(false);
         }
     }
 }

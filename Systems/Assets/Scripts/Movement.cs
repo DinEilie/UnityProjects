@@ -104,17 +104,22 @@ public class Movement : MonoBehaviour
         if(Input.GetButtonDown("Jump")){
             float temp = gameObject.GetComponent<Gravity>().Get();
             if (grounded && sprinting)
-                gameObject.GetComponent<Gravity>().AddVelocity(jumpHeight, sprintSpeed);
+                gameObject.GetComponent<Gravity>().SetVelocity(jumpHeight, sprintSpeed);
             else if (grounded)
-                gameObject.GetComponent<Gravity>().AddVelocity(jumpHeight, 1f);
+                gameObject.GetComponent<Gravity>().SetVelocity(jumpHeight, 1f);
         }
     }
 
     private void Floatate(){
-        if (Input.GetKey(KeyCode.F) && !grounded)
-            gameObject.GetComponent<Gravity>().Set(-3f);
-        else   
-            gameObject.GetComponent<Gravity>().Reset();
+        if (Input.GetKey(KeyCode.F) && !grounded){
+            if(gameObject.GetComponent<Gravity>().GetVelocity() < 0)
+                gameObject.GetComponent<Gravity>().AddVelocity();
+            else {
+                gameObject.GetComponent<Gravity>().enable = false;
+                playerController.Move(transform.up * (speed * 0.2f) * Time.deltaTime);
+            }
+        } else
+            gameObject.GetComponent<Gravity>().enable = true;
     }
 
     private void Sprint(){
@@ -160,8 +165,7 @@ public class Movement : MonoBehaviour
         return false;
     }
 
-    public void TriggerClimbing(){
-        if(!climbing && allowClimb){
+    public void EnableClimbing(){
             Debug.Log("Now entering climbing mode");
             gameObject.GetComponent<Gravity>().enable = false;
             allowSprint = false;
@@ -169,7 +173,9 @@ public class Movement : MonoBehaviour
             allowJump = false;
             allowFloatability = false;
             climbing = true;
-        } else{
+    }
+
+    public void DisableClimbing(){
             Debug.Log("Now leaving climbing mode");
             gameObject.GetComponent<Gravity>().enable = true;
             allowSprint = true;
@@ -177,6 +183,5 @@ public class Movement : MonoBehaviour
             allowJump = true;
             allowFloatability = true;
             climbing = false;
-        }
     }
 }

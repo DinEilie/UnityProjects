@@ -16,7 +16,7 @@ public class ItemCell : MonoBehaviour
     public ItemCell(Item otherItem, int otherQuantity){
         this.item = otherItem;
         this.quantity = otherQuantity;
-        this.totalWeight = otherQuantity * otherItem.weight;
+        this.totalWeight = otherQuantity * otherItem.getWeight();
     }
 
     public ItemCell(ItemCell otherCell){
@@ -36,10 +36,10 @@ public class ItemCell : MonoBehaviour
         if (this.quantity == 0){
             this.item = otherItem;
             this.quantity++;
-            this.totalWeight = otherItem.weight;
+            this.totalWeight = otherItem.getWeight();
         } else if (this.quantity < 50 && this.item == otherItem){
             this.quantity++;
-            this.totalWeight = otherItem.weight * this.quantity;
+            this.totalWeight = otherItem.getWeight() * this.quantity;
         }
     }
 
@@ -60,15 +60,15 @@ public class ItemCell : MonoBehaviour
             int sum = cell.quantity + this.quantity;
             if (sum <= 50){
                 this.quantity = sum;
-                this.totalWeight = this.item.weight * this.quantity;
+                this.totalWeight = this.item.getWeight() * this.quantity;
                 cell.clear();
             }
             else {
                 sum -= 50;
                 cell.quantity = sum;
-                cell.totalWeight = cell.item.weight * cell.quantity;
+                cell.totalWeight = cell.item.getWeight() * cell.quantity;
                 this.quantity = 50;
-                this.totalWeight = this.item.weight * 50f;
+                this.totalWeight = this.item.getWeight() * 50f;
             }
         }
     }

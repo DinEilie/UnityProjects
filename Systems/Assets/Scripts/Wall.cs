@@ -11,14 +11,16 @@ public class Wall : MonoBehaviour
 
     void OnTriggerStay(Collider other){
         if(other.tag == "Player"){
-            if(Input.GetKeyDown("e") && other.GetComponent<Movement>().allowClimb)
-                other.GetComponent<Movement>().TriggerClimbing();
+            if(Input.GetKeyDown("e") && !other.GetComponent<Movement>().IsClimbing() && other.GetComponent<Movement>().allowClimb)
+                other.GetComponent<Movement>().EnableClimbing();
+            else if (Input.GetKeyDown("space") && other.GetComponent<Movement>().IsClimbing() && other.GetComponent<Movement>().allowClimb)
+                other.GetComponent<Movement>().DisableClimbing();
         }
     }
 
     void OnTriggerExit(Collider other){
         if(other.tag == "Player")
             if(other.GetComponent<Movement>().IsClimbing())
-                other.GetComponent<Movement>().TriggerClimbing();
+                other.GetComponent<Movement>().DisableClimbing();
     }
 }

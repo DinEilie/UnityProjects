@@ -29,13 +29,23 @@ public class Gravity : MonoBehaviour
         return gravity;
     }
 
+    public float GetVelocity(){
+        return velocity;
+    }
+
     // Set the gravity to other value
     public void Set(float num){
         gravity = num;
     }
 
-    // Set the gravity to other value
-    public void AddVelocity(float height, float speed){
+    // Reduce Velocity
+    public void AddVelocity(){
+        float value = (gravity * 1.1f) * Time.deltaTime;
+        velocity += value;
+    }
+
+    // Add velocity 
+    public void SetVelocity(float height, float speed){
         float movement = Mathf.Sqrt(height * speed * gravity);
         velocity = movement;
     }
