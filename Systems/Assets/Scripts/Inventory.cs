@@ -9,7 +9,7 @@ public class Inventory : MonoBehaviour
     public bool allowStorage = true;
     public bool allowEquipment = true;
     
-    public ItemCell[,] itemStorage = new ItemCell[8,12];
+    public ItemStorage[] storage = new ItemStorage[4];
     // Start is called before the first frame update
     void Start()
     {
