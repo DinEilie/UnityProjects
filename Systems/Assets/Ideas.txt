@@ -1,0 +1,101 @@
+Player Movement:
+1) WASD = walking
+2) WASD + LShift = Running
+3) Space(once) = Jump
+4) WASD + Space(once) = Jump with direction
+5) WASD + LShift + Space(once) = Mega jump with diretion
+6) LCtrl(once) = Crawl
+7) F = Float
+8) E(once) = Interact
+9) C(once) = Cancle Interact
+10) Tab(once) = Control Panel ()
+
+Player Stats:
+1) Battery
+2) Shield 
+3) Intactness
+
+Item:
+1) ID(Key)
+2) Name
+3) Icon
+4) 3D Model
+5) Info
+6) Quantity
+7) Destructible
+8) Type {Tool|Weapon|Armor|Utility|Material|Unique}
+9) Tool {None|Scan|Repair|Key|Mine|Cut|Smash|Grab|Trap}
+10) Weapon {None|Blade|Gun|Rifle|Canon}
+11) Rarity {Common|Rare|Exotic|Priceless|Unknown}
+12) Price
+13) Durability
+14) Effect
+
+Effect:
+1) ID(Key)
+2) Name
+3) Icon
+4) Info
+5) Stack
+6) Quantity
+7) Viewable
+8) Duration {Temporary|Fixed}
+9) Period(seconds)
+10) PeriodF
+11) Loop
+12) LoopPeriod(Seconds)
+13) LoopPeriodF
+14) LoopCount
+15) LoopCountF
+16) Effect[]
+
+
+Weapons and Tools:
+1) Scanner = Record data on the object
+2) Repair Kit = Repair objects
+3) Master Key = Hack objects
+4) Driller = Drill through any terrain and ores
+5) Saw = Cut through anything
+6) Claw = Fetch any object or move torwards it
+7) Hand Gun = Small gun for self defense
+8) Rifle = Bigger gun againts stronger foes
+9) Canon = Huge gun againts ultimate danger
+
+Control Panel:
+1) View = 3D model of the player and stats, effects and equipment
+2) Storage = Repository for all items
+
+Combat:
+1) Mouse Wheel = Next tool\weapon
+2) Left Mouse Click = Fire
+3) Right Mouse Click = Zoom
+4) Q = RegenerateShield
+5) F = Wheel of tools\weapons
+6) X = Call for command terminal
+7) V(once) = Hit
+
+Control Panel:
+1) Map
+2) Skills = Skill tree and effects
+3) Mission Log = Tracking log after all missions
+4) Data Log
+
+Objects:
+1) Climbable Wall
+2) Crawls Area
+3) Holdable Object
+
+Foes:
+1) Detection Radius
+2) Routine
+3) Close Range Combat
+4) Long Range Combat
+5) Stats
+
+Hacking:
+1) Unlocking with mini-games
+2) Hijack foe
+
+Container:
+1) Small Storage
+
