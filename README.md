@@ -1,12 +1,10 @@
 # Unity Projects
 Hello there! I'm Din Eilie and in this repository you will find game projects that I'm currently working on. Game development always had a special place in my heart
 eversince I was young, hope you will like what you find!
-# Samurai (2D Adventure Game) - Project under development
+# Samurai (2D Adventure Game) - DEMO
 ## Contents
 > 1. Description
-> 1. Game Mechanics
-> 1. Screenshots
-> 1. Downloads
+> 2. Downloads
 
 #### Description
 Samurai is a 2D Adventure game, where you have to find all the missing keys inorder to unlock the doors to the next level. During each level you will unlock new skills to help you fight the dangers across the "Samurai World".
