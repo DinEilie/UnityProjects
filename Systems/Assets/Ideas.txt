@@ -3,17 +3,20 @@ Player Movement:
 2) WASD + LShift = Running
 3) Space(once) = Jump
 4) WASD + Space(once) = Jump with direction
-5) WASD + LShift + Space(once) = Mega jump with diretion
+5) WASD + LShift + Space(once) = Mega jump with direction
 6) LCtrl(once) = Crawl
 7) F = Float
 8) E(once) = Interact
-9) C(once) = Cancle Interact
+9) C(once) = Cancel Interact
 10) Tab(once) = Control Panel ()
 
 Player Stats:
 1) Battery
 2) Shield 
 3) Intactness
+4) Speed
+5) Level
+6) AI
 
 Item:
 1) ID(Key)
@@ -56,13 +59,13 @@ Weapons and Tools:
 3) Master Key = Hack objects
 4) Driller = Drill through any terrain and ores
 5) Saw = Cut through anything
-6) Claw = Fetch any object or move torwards it
-7) Hand Gun = Small gun for self defense
-8) Rifle = Bigger gun againts stronger foes
-9) Canon = Huge gun againts ultimate danger
+6) Claw = Fetch any object or move toward it
+7) Hand Gun = Small gun for self-defense
+8) Rifle = Bigger gun against stronger foes
+9) Canon = Huge gun against ultimate danger
 
 Control Panel:
-1) View = 3D model of the player and stats, effects and equipment
+1) View = 3D model of the player and stats, effects, and equipment
 2) Storage = Repository for all items
 
 Combat:
