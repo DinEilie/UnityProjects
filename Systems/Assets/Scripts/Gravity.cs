@@ -40,7 +40,7 @@ public class Gravity : MonoBehaviour
 
     // Reduce Velocity
     public void AddVelocity(){
-        float value = (gravity * 1.1f) * Time.deltaTime;
+        float value = (gravity + 4.5f) * Time.deltaTime;
         velocity += value;
     }
 
