@@ -10,13 +10,14 @@ public class Shooter : MonoBehaviour
     [SerializeField] private GameObject hitObject;
     [SerializeField] private float recoilSpeed = 0.5f; 
     [SerializeField] private GameObject cursorShoot;
+    [SerializeField] private Camera camera;
     [SerializeField] [Tooltip("Refrence to the animator controller.")] private Animator animator;
     [SerializeField] [Tooltip("Refrence to the animator controller.")] private Animator animatorTransparent;
     [SerializeField] [Tooltip("Refrence to the animator controller.")] private Animator animatorFirstPerson;
     [SerializeField] private float recoilTimer = 0.5f;
-    private bool isDrawn = false;
-    private bool isAiming = false;
-    private bool isFiring = false;
+    [SerializeField] private bool isDrawn = true;
+    [SerializeField] private bool isAiming = false;
+    [SerializeField] private bool isFiring = false;
 
     // Start is called before the first frame update
     void Start()
@@ -39,9 +40,18 @@ public class Shooter : MonoBehaviour
         if (Input.GetButton("Fire2") && !gameObject.GetComponent<Movement>().IsClimbing()){
             cursorShoot.SetActive(true);
             isAiming = true;
-            if(!isDrawn){
+            if (!isDrawn)
+            {
                 animator.SetBool("isDrawn", true);
+                animatorFirstPerson.SetBool("isDrawn", true);
+                animatorTransparent.SetBool("isDrawn", true);
+                isDrawn = true;
             }
+
+            if (camera.fieldOfView - 60f * Time.deltaTime <= 70f)
+                camera.fieldOfView = 70f;
+            else
+                camera.fieldOfView -= 60f * Time.deltaTime;
 
             // Shoot a bullet
             if(Input.GetButton("Fire1") && recoilTimer == 0f){
@@ -61,16 +71,26 @@ public class Shooter : MonoBehaviour
         } else {
             cursorShoot.SetActive(false);
             isAiming = false;
+            if (camera.fieldOfView + 60f * Time.deltaTime >= 85f)
+                camera.fieldOfView = 85f;
+            else
+                camera.fieldOfView += 60f * Time.deltaTime;
         }
 
-        if(Input.GetKeyDown(KeyCode.Q) && !gameObject.GetComponent<Movement>().IsClimbing()){
-            
-            if(isDrawn){
+        if(Input.GetKeyDown(KeyCode.Q) && !gameObject.GetComponent<Movement>().IsClimbing())
+        {    
+            if(isDrawn)
+            {
                 animator.SetBool("isDrawn", false);
                 animatorFirstPerson.SetBool("isDrawn", false);
+                animatorTransparent.SetBool("isDrawn", false);
                 isDrawn = false;
             } 
-            else{
+            else
+            {
+                animator.SetBool("isDrawn", true);
+                animatorFirstPerson.SetBool("isDrawn", true);
+                animatorTransparent.SetBool("isDrawn", true);
                 isDrawn = true;
             }
                 

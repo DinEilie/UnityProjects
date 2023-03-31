@@ -5975,6 +5975,7 @@ MonoBehaviour:
   hitObject: {fileID: 88926294}
   recoilSpeed: 0.267
   cursorShoot: {fileID: 1004391846}
+  camera: {fileID: 1327355412}
   animator: {fileID: 1177570960}
   animatorTransparent: {fileID: 24088185}
   animatorFirstPerson: {fileID: 1767923064}
@@ -6782,7 +6783,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 660574298}
   m_LocalRotation: {x: 0.000000018984258, y: 0.011028455, z: 0.9999392, w: 0.00000053245526}
-  m_LocalPosition: {x: 0.08207789, y: -0.06771764, z: -0.015122186}
+  m_LocalPosition: {x: 0.082, y: -0.3, z: -0.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 984026461}
@@ -9086,7 +9087,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 994548852}
   m_LocalRotation: {x: 0.3420201, y: 0, z: 0, w: 0.9396927}
-  m_LocalPosition: {x: -0.1436, y: 0.005, z: 0.41}
+  m_LocalPosition: {x: -0.1436, y: -0.081, z: 0.343}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 574463905}
@@ -9116,8 +9117,8 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.1
-  far clip plane: 1000
-  field of view: 60
+  far clip plane: 2
+  field of view: 45
   orthographic: 0
   orthographic size: 5
   m_Depth: 1
@@ -17205,7 +17206,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1983274764}
   m_LocalRotation: {x: 0.000000018995559, y: 0.01101821, z: 0.9999393, w: 0.00000053245526}
-  m_LocalPosition: {x: -0.08207788, y: -0.06771803, z: -0.015122138}
+  m_LocalPosition: {x: -0.082, y: -0.3, z: -0.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1485519191}

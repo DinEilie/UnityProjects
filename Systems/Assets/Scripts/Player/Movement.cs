@@ -66,6 +66,9 @@ public class Movement : MonoBehaviour
                 // Player movement values
                 moveVertically = Input.GetAxis("Vertical") * (speed * sprintSpeed) * Time.deltaTime;
                 moveHorizontally = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
+                animator.SetBool("isGrounded", true);
+                animatorFirstPerson.SetBool("isGrounded", true);
+                animatorTransparent.SetBool("isGrounded", true);
 
                 // Player is moving vertically or horizontally
                 if(moveVertically != 0 || moveHorizontally != 0){
@@ -107,6 +110,9 @@ public class Movement : MonoBehaviour
                 // Player movement values while in the air
                 moveVertically = Input.GetAxis("Vertical") * ((speed * sprintSpeed) * 0.7f) * Time.deltaTime;
                 moveHorizontally = Input.GetAxis("Horizontal") * (speed * 0.9f) * Time.deltaTime;
+                animator.SetBool("isGrounded", false);
+                animatorFirstPerson.SetBool("isGrounded", false);
+                animatorTransparent.SetBool("isGrounded", false);
 
                 // Player is moving vertically or horizontally
                 if(moveVertically != 0 || moveHorizontally != 0){
@@ -200,7 +206,7 @@ public class Movement : MonoBehaviour
     }
 
     private void Jump(){
-        if(Input.GetButtonDown("Jump")){
+        if(Input.GetButtonDown("Jump") && !IsCrouching()){
             float temp = gameObject.GetComponent<Gravity>().Get();
             if (grounded && sprinting)
                 gameObject.GetComponent<Gravity>().SetVelocity(jumpHeight, sprintSpeed);
