@@ -11,6 +11,7 @@ public class Shooter : MonoBehaviour
     [SerializeField] private float recoilSpeed = 0.5f; 
     [SerializeField] private GameObject cursorShoot;
     [SerializeField] private Camera camera;
+    [SerializeField] private Camera cameraFirstPerson;
     [SerializeField] [Tooltip("Refrence to the animator controller.")] private Animator animator;
     [SerializeField] [Tooltip("Refrence to the animator controller.")] private Animator animatorTransparent;
     [SerializeField] [Tooltip("Refrence to the animator controller.")] private Animator animatorFirstPerson;
@@ -49,9 +50,16 @@ public class Shooter : MonoBehaviour
             }
 
             if (camera.fieldOfView - 60f * Time.deltaTime <= 70f)
+            {
                 camera.fieldOfView = 70f;
+                cameraFirstPerson.fieldOfView = 70f;
+            }
             else
+            {
                 camera.fieldOfView -= 60f * Time.deltaTime;
+                cameraFirstPerson.fieldOfView -= 60f * Time.deltaTime;
+            }
+                
 
             // Shoot a bullet
             if(Input.GetButton("Fire1") && recoilTimer == 0f){
@@ -72,9 +80,15 @@ public class Shooter : MonoBehaviour
             cursorShoot.SetActive(false);
             isAiming = false;
             if (camera.fieldOfView + 60f * Time.deltaTime >= 85f)
+            {
                 camera.fieldOfView = 85f;
+                cameraFirstPerson.fieldOfView = 85f;
+            }
             else
+            {
                 camera.fieldOfView += 60f * Time.deltaTime;
+                cameraFirstPerson.fieldOfView += 60f * Time.deltaTime;
+            }  
         }
 
         if(Input.GetKeyDown(KeyCode.Q) && !gameObject.GetComponent<Movement>().IsClimbing())

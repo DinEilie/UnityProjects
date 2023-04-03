@@ -199,7 +199,6 @@ public class Movement : MonoBehaviour
                 gameObject.GetComponent<CharacterController>().center = Vector3.zero;
                 gameObject.GetComponent<CharacterController>().height = 2f;
                 cameraObj[0].transform.position = eyeMarker.position;
-                cameraObj[1].transform.position = eyeMarker.position;
                 sprintSpeed = 1f;
             }
         }

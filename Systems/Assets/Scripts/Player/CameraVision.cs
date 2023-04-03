@@ -14,7 +14,6 @@ public class CameraVision : MonoBehaviour
     private float cameraLeftRight;
     private float cameraUpDown;
     [SerializeField] private Transform player;
-    [SerializeField] [Tooltip("Refrence to the ''Camera'' object.")] private GameObject cameraBody;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,32 +27,24 @@ public class CameraVision : MonoBehaviour
             //Camera rotation values
             cameraLeftRight = Input.GetAxis("Mouse X") * cameraSensitivity * Time.deltaTime;
             cameraUpDown -= Input.GetAxis("Mouse Y") * cameraSensitivity * Time.deltaTime;
-            cameraUpDown = Mathf.Clamp(cameraUpDown, -90f, 75f);
+            cameraUpDown = Mathf.Clamp(cameraUpDown, -85f, 65f);
         
             //Rotate the object
             if (allowYInvertion){
                 if (allowXInvertion){
                     transform.localRotation = Quaternion.Euler(-1f * cameraUpDown, 0f, 0f);
-                    if (cameraUpDown >= 40 && cameraUpDown <= 75)
-                        cameraBody.transform.localRotation = Quaternion.Euler(-1f * cameraUpDown, 0f, 0f);
                     player.Rotate(Vector3.up * cameraLeftRight * -1f);
                 } else {
                     transform.localRotation = Quaternion.Euler(-1f * cameraUpDown, 0f, 0f);
-                    if (cameraUpDown >= 40 && cameraUpDown <= 75)
-                        cameraBody.transform.localRotation = Quaternion.Euler(-1f * cameraUpDown, 0f, 0f);
                     player.Rotate(Vector3.up * cameraLeftRight);
                 }
                 
             } else {
                 if (allowXInvertion){
                     transform.localRotation = Quaternion.Euler(cameraUpDown, 0f, 0f);
-                    if (cameraUpDown >= 40 && cameraUpDown <= 75)
-                        cameraBody.transform.localRotation = Quaternion.Euler(cameraUpDown, 0f, 0f);
                     player.Rotate(Vector3.up * cameraLeftRight * -1f);
                 } else {
                     transform.localRotation = Quaternion.Euler(cameraUpDown, 0f, 0f);
-                    if (cameraUpDown >= 40 && cameraUpDown <= 75)
-                        cameraBody.transform.localRotation = Quaternion.Euler(cameraUpDown, 0f, 0f);
                     player.Rotate(Vector3.up * cameraLeftRight);
                 }
             }
