@@ -12,6 +12,7 @@ public class Shooter : MonoBehaviour
     [SerializeField] private GameObject cursorShoot;
     [SerializeField] private Camera camera;
     [SerializeField] private Camera cameraFirstPerson;
+    [SerializeField] private GameObject flashlight;
     [SerializeField] [Tooltip("Refrence to the animator controller.")] private Animator animator;
     [SerializeField] [Tooltip("Refrence to the animator controller.")] private Animator animatorTransparent;
     [SerializeField] [Tooltip("Refrence to the animator controller.")] private Animator animatorFirstPerson;
@@ -19,6 +20,7 @@ public class Shooter : MonoBehaviour
     [SerializeField] private bool isDrawn = true;
     [SerializeField] private bool isAiming = false;
     [SerializeField] private bool isFiring = false;
+    [SerializeField] private bool isLight = false;
 
     // Start is called before the first frame update
     void Start()
@@ -35,6 +37,18 @@ public class Shooter : MonoBehaviour
             recoilTimer -= Time.deltaTime;
         else {
             recoilTimer = 0f;
+        }
+
+        if (Input.GetKeyDown(KeyCode.T)){
+            if (isLight){
+                flashlight.SetActive(false);
+                isLight = false;
+            }
+            else
+            {
+                flashlight.SetActive(true);
+                isLight = true;
+            }     
         }
             
 
